@@ -47,3 +47,5 @@ Check the nftables wiki page: https://wiki.nftables.org
 Check the nftables manual page on your system: nft(8)
 
 Check the libnftables-json manual page on your system: libnftables-json(5)
+
+Check related blogpost: https://ral-arturo.org/2020/11/22/python-nftables-tutorial.html
