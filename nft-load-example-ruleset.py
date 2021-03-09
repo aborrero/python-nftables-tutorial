@@ -88,7 +88,7 @@ def main():
         print(f"ERROR: running json cmd: {error}")
         exit(1)
 
-    if len(output) == 0:
+    if len(output) != 0:
         # more error control?
         print(f"WARNING: output: {output}")
 
