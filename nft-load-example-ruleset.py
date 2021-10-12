@@ -42,7 +42,7 @@ NFTABLES_JSON = """
     { "add": { "chain": {
         "family": "inet",
         "table": "mytable",
-        "chain": "mychain"
+        "name": "mychain"
     }}},
     { "add": { "rule": {
         "family": "inet",
@@ -50,6 +50,7 @@ NFTABLES_JSON = """
         "chain": "mychain",
         "expr": [
             { "match": {
+                "op": "==",
                 "left": { "payload": {
                     "protocol": "tcp",
                     "field": "dport"
