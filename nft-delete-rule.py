@@ -225,7 +225,7 @@ def main():
     delete_rules_command["nftables"].append(dict(metainfo=dict(json_schema_version=1)))
 
     for rule_info in info_about_rules_to_delete:
-        delete_rules_command["nftables"].append(dict(delete=rule_info))
+        delete_rules_command["nftables"].append(dict(delete=dict(rule=rule_info)))
 
     try:
         nft.json_validate(delete_rules_command)
